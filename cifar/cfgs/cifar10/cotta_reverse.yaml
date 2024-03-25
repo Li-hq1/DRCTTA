@@ -1,0 +1,35 @@
+MODEL:
+  ADAPTATION: cotta
+  ARCH: Standard
+TEST:
+  BATCH_SIZE: 200
+CORRUPTION:
+  DATASET: cifar10
+  SEVERITY:
+    - 5
+  TYPE:
+    - jpeg_compression
+    - pixelate
+    - elastic_transform
+    - contrast
+    - brightness
+    - fog
+    - frost
+    - snow
+    - zoom_blur
+    - motion_blur
+    - glass_blur
+    - defocus_blur
+    - impulse_noise
+    - shot_noise
+    - gaussian_noise
+OPTIM:
+  METHOD: Adam
+  STEPS: 1
+  BETA: 0.9
+  LR: 1e-3
+  WD: 0.
+  MT: 0.999
+  RST: 0.01
+  AP: 0.92
+ 
