@@ -3,7 +3,7 @@
 
 - This is a PyTorch/GPU Implementation of the paper Domain-Regressive Continual Test-Time Adaptation with Orthogonal Low-Rank Adapters. Our code is mainly based on the [official PyTorch implementation of CoTTA](https://github.com/qinenergy/cotta). 
 - We have released the code about statistical characteristics collection on ViT based on the [official PyTorch implementation of CFA](https://github.com/kojima-takeshi188/CFA)
-- We are committed to releasing our code upon acceptance of our paper.
+- We are committed to releasing the remaining code upon acceptance of our paper.
 
 ## Dependencies
 
@@ -58,7 +58,7 @@ bash run_cifar100.sh
 Collect statistical characteristics of features before LN layers of ViT:
 
 ```bash
-cd statistics_collection
+cd collection
 bash statistic.sh
 ```
 
